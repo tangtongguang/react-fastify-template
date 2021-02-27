@@ -9,6 +9,7 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "wsrun start",
     "server:build": "yarn workspace server tsc -b",
     "server:start": "yarn workspace server start",
     "server:dev": "yarn workspace server dev",
@@ -26,6 +27,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.2",
+    "wsrun": "^5.2.4"
   }
 }

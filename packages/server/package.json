@@ -5,8 +5,8 @@
   "author": "t",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev src",
-    "start": "ts-node src",
+    "start:prod": "ts-node src",
+    "start": "ts-node-dev src",
     "start:build": "node dist/src/index.js",
     "test": "jest"
   },
