@@ -1,5 +1,5 @@
 {
-  "name": "@hb/server",
+  "name": "server",
   "version": "1.0.0",
   "main": "dist/src/index.js",
   "author": "t",

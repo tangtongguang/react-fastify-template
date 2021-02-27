@@ -9,11 +9,11 @@
     "packages/*"
   ],
   "scripts": {
-    "server:build": "yarn workspace @hb/server tsc -b",
-    "server:start": "yarn workspace @hb/server start",
-    "server:dev": "yarn workspace @hb/server dev",
-    "server:test": "yarn workspace @hb/server test",
-    "client:start": "yarn workspace @hb/client start"
+    "server:build": "yarn workspace server tsc -b",
+    "server:start": "yarn workspace server start",
+    "server:dev": "yarn workspace server dev",
+    "server:test": "yarn workspace server test",
+    "client:start": "yarn workspace client start"
   },
   "dependencies": {
     "@types/node": "^14.14.31",
