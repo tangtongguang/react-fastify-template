@@ -5,7 +5,7 @@
     "baseUrl": ".",
     "moduleResolution": "Node",
     "module": "CommonJS",
-    "target": "ES2018",
+    "target": "ES2020",
     "sourceMap": true,
     "lib": [
       "ESNext"
@@ -17,12 +17,7 @@
     "noImplicitReturns": false,
     "noImplicitThis": false,
     "noUnusedLocals": true,
-    "resolveJsonModule": true,
-    "paths": {
-      "@hb/*": [
-        "packages/server/src/index.ts"
-      ]
-    }
+    "resolveJsonModule": true
   },
   "references": [
     {

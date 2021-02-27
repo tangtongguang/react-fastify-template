@@ -1,9 +1,9 @@
 
-
+import fastify, { RouteShorthandOptions } from 'fastify';
 import fp from 'fastify-plugin';
 
 const stack: any[] = [];
-const itemValidation = {
+const itemValidation: RouteShorthandOptions = {
   schema: {
     body: {
       type: 'object',
