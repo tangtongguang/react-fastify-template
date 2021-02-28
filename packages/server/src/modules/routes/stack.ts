@@ -23,7 +23,29 @@ export default fp(async (server, opts, next) => {
     logLevel: 'warn',
     method: ['GET', "HEAD"],
     handler: async (req, reply) => {
-      return reply.send(stack)
+      const prisma = server.prisma();
+      await prisma.user.create({
+        data: {
+          name: 'Alice',
+          email: 'alice@prisma.io',
+          posts: {
+            create: { title: 'Hello World' },
+          },
+          profile: {
+            create: { bio: 'I like turtles' },
+          },
+        },
+      })
+      const allUsers = await prisma.user.findMany({
+        include: {
+          posts: true,
+          profile: true,
+        },
+      })
+      console.dir(allUsers, { depth: null })
+
+      return reply.send(allUsers)
+
     }
   })
 

@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "wsrun start",
+    "start": "wsrun -p server -c start",
     "prisma:init": "wsrun -p server -c prisma:init",
     "prisma:introspect": "wsrun -p server -c prisma:introspect",
     "prisma:generate": "wsrun -p server -c prisma:generate"
